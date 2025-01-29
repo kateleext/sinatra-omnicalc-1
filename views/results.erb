@@ -1,0 +1,9 @@
+<h1><%=@operation.capitalize.gsub("_"," ")%> results</h1>
+<table class = "results">
+<p><%@results.each do |key, value|%>
+<tr><td><%=key%></td><td><%=value%></td></tr>
+<%end%>
+</table>
+<div>
+<a href="/<%=@operation%>/new"> <%=@instruction%> </a>
+</div>
